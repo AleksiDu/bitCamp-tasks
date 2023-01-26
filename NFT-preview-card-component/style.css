@@ -1,0 +1,142 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --dark-blue-line: hsl(215, 32%, 27%);
+  --dark-blue-main: hsl(217, 54%, 11%);
+  --dark-blue-card: hsl(216, 50%, 16%);
+  --cyan: hsl(178, 100%, 50%);
+  --blue: hsl(215, 51%, 70%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 18px;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: var(--dark-blue-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 0 0 0;
+  width: 327px;
+  height: 543px;
+  border-radius: 15px;
+  background-color: var(--dark-blue-card);
+}
+
+.nft-img {
+  width: 278px;
+  height: 278px;
+}
+
+.content {
+  text-align: left;
+  padding: 24px;
+}
+
+h1 {
+  height: 28px;
+  width: 278px;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.description {
+  height: 52px;
+  width: 278px;
+  font-weight: 300;
+  color: var(--blue);
+  font-size: 18px;
+  line-height: 26px;
+  padding: 12px 0px 16px 0px;
+  margin-bottom: 16px;
+}
+
+.info {
+  height: 19px;
+  width: 278px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  padding-top: 16px;
+  margin-bottom: 16px;
+}
+
+.ethereum {
+  font-weight: 600;
+  color: var(--cyan);
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  margin-left: 0.5rem;
+}
+
+.time {
+  color: var(--blue);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.divider {
+  height: 1px;
+  width: 278px;
+  border-style: none;
+  border-radius: 0px;
+  background-color: var(--dark-blue-line);
+  margin-bottom: 16px;
+}
+
+.avatar-name {
+  display: flex;
+}
+
+.avatar-info {
+  width: 219px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: var(--white);
+}
+
+.avatar {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+}
+
+p .time {
+  color: var(--blue);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  margin: 0 0.25em 0 0;
+}
